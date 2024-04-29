@@ -2,6 +2,9 @@
 using namespace std;
 
 int main() {
-    cout<<"\"Hello\"";
-    return 0;
+
+	cout << "He says \"It\'s a really simple sentence\".";
+
+	return 0;
+
 }
