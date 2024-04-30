@@ -11,14 +11,14 @@ int main() {
             break;
     }
     int sum=0;
-    double avg=0;
     for(int i=0; i<cnt; i++) {
         sum+=arr[i];
     }
+    double avg=(double)sum/cnt;
     cout<<sum<<" ";
     cout<<fixed;
     cout.precision(1);
-    cout<<(double)sum/cnt;
+    cout<<avg;
     
     return 0;
 }
