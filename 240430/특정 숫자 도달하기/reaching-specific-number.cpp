@@ -1,24 +1,31 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int arr[10]={};
     int cnt;
-    for(int i=0; i<10; i++) {
-        cin>>arr[i];
-        cnt=i;
-        if(arr[i]>250)
+
+    for(int i=0; i<10;i++)
+    {
+        int tmp;
+        cin>>tmp;
+        if(tmp>=250)
             break;
+        arr[i]=tmp;
+        cnt=i;
     }
+
     int sum=0;
-    for(int i=0; i<cnt; i++) {
+    for(int i=0; i<10; i++) {
         sum+=arr[i];
     }
-    double avg=(double)sum/cnt;
+
     cout<<sum<<" ";
     cout<<fixed;
     cout.precision(1);
-    cout<<avg;
-    
+    // 우선순위 괄호 , 인덱스 0번부터 시작
+    cout<<(double)sum/(cnt+1);
+
     return 0;
 }
