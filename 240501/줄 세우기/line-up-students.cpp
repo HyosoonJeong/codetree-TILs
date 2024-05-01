@@ -18,10 +18,11 @@ class Student {
 bool cmp(Student a, Student b) {
     if(a.height!=b.height)
         return a.height>b.height;
-    else if(a.height!=b.height)
+    else if(a.weight!=b.weight)
         return a.weight>b.weight;
     else 
         return a.number<b.number;
+    
 }
 
 int main() {
