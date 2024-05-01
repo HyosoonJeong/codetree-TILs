@@ -16,10 +16,11 @@ int main() {
     sort(A, A+n);
     sort(B, B+n);
 
-    bool flag=false;
+    bool flag=true;
     for(int i=0; i<n; i++) {
-        if(A[i]==B[i])
-            flag=true;
+        if(A[i]!=B[i]){
+            flag=false;
+            break;}
     }
     if(flag)
         cout<<"Yes";
