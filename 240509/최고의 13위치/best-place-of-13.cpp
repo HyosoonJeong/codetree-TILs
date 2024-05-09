@@ -14,7 +14,7 @@ int main() {
     }
     int max=0;
     for(int i=0; i<N; i++) {
-        for(int j=0; j<N; j++) {
+        for(int j=0; j<N-2; j++) {
             if(max<arr[i][j]+arr[i][j+1]+arr[i][j+2])
                 max=arr[i][j]+arr[i][j+1]+arr[i][j+2];
         }
